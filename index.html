@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gerador de QR Code</title>
+  <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1>Gerador de QR Code</h1>
+  <form id="form-links">
+    <label for="link1">Link Android:</label>
+    <input type="text" id="link1" name="link1" />
+    <br />
+    <label for="link2">Link iOS:</label>
+    <input type="text" id="link2" name="link2" />
+    <br />
+    <button type="button" id="btn-gerar">Gerar QR Code</button>
+  </form>
+
+  <div id="qrcode"></div>
+
+  <script src="./js/geradorQRCode.js"></script>
+</body>
+
+</html>
